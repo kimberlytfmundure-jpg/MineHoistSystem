@@ -23,7 +23,7 @@ from feature_engineering import engineer_features, FEATURE_COLUMNS
 from models import AnomalyDetector, FaultClassifier, RULPredictor, train_test_split_by_run
 from health_engine import assess_component
 
-st.set_page_config(page_title="Old Nic Mine — Hoist Predictive Maintenance", layout="wide")
+st.set_page_config(page_title="Hoist Predictive Maintenance", layout="wide")
 
 STATUS_COLORS = {
     "Normal operation": "#2ecc71",
