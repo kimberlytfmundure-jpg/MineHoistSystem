@@ -330,7 +330,7 @@ with tab_impact:
         lead_df = pd.DataFrame(
             {"Component": list(lead_times.keys()), "Avg. lead time (hours)": list(lead_times.values())}
         ).set_index("Component")
-        st.bar_chart(lead_df, color=WARNING_AMBER)
+        st.bar_chart(lead_df)
         st.dataframe(lead_df.style.format({"Avg. lead time (hours)": "{:.1f}"}), width="stretch")
 
     st.markdown("---")
